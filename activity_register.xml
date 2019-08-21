@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:background="@drawable/bgr" >
+
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/textView14"
+        android:layout_alignLeft="@+id/textView14"
+        android:layout_marginTop="76dp"
+        android:text="Register number"
+        android:textColor="@android:color/black"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="291dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="36dp"
+        android:layout_marginRight="36dp"
+        android:layout_marginTop="14dp"
+        android:text="Student Registration"
+        android:textColor="@android:color/black"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="98dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/textView4"
+        android:layout_alignLeft="@+id/textView4"
+        android:layout_marginTop="127dp"
+        android:text="User Name"
+        android:textColor="@android:color/black" />
+
+    <EditText
+        android:id="@+id/registerNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="69dp"
+        android:layout_toRightOf="@+id/textView4"
+        android:ems="10"
+        android:inputType="textCapCharacters" />
+
+    <EditText
+        android:id="@+id/userName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView15"
+        android:layout_alignStart="@+id/registerNumber"
+        android:layout_alignLeft="@+id/registerNumber"
+        android:ems="10"
+        android:inputType="textCapCharacters" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="97dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/textView4"
+        android:layout_alignLeft="@+id/textView4"
+        android:layout_marginTop="180dp"
+        android:text="Department"
+        android:textColor="@android:color/black" />
+
+    <EditText
+        android:id="@+id/department"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView16"
+        android:layout_alignStart="@+id/registerNumber"
+        android:layout_alignLeft="@+id/registerNumber"
+        android:ems="10"
+        android:inputType="textCapCharacters" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tvpassword"
+        android:layout_alignStart="@+id/registerNumber"
+        android:layout_alignLeft="@+id/registerNumber"
+        android:ems="10"
+        android:inputType="textPassword" />
+
+    <TextView
+        android:id="@+id/tvpassword"
+        android:layout_width="98dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView16"
+        android:layout_alignStart="@+id/textView4"
+        android:layout_centerVertical="true"
+        android:text="Password"
+        android:textColor="@android:color/black" />
+
+    <Button
+        android:id="@+id/cancel"
+        android:layout_width="107dp"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/textView14"
+        android:layout_alignLeft="@+id/tvpassword"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="34dp"
+        android:layout_marginLeft="32dp"
+        android:onClick="cancel"
+        android:background="@drawable/butto"
+        
+        android:textStyle="bold"
+        android:text="CANCEL" />
+
+    <Button
+        android:id="@+id/register"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/cancel"
+        android:layout_alignLeft="@+id/cancel"
+        android:layout_alignRight="@+id/cancel"
+        android:layout_marginBottom="26dp"
+        android:onClick="register"
+        
+        android:textStyle="bold"
+        android:background="@drawable/butto"
+        android:text="REGISTER" />
+
+</RelativeLayout>
